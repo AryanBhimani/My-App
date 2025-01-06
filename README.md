@@ -62,9 +62,6 @@ You can download or view the video directly:
 
 ---
 
-
----
-
 ## Connect
 
 <a href="https://dev-aryanbhimani.pantheonsite.io/" target="_blank"><img src="assets/portfolio.png" width="50" ></a>
