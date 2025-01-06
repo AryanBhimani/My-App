@@ -45,7 +45,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Video Demo
 You can download or view the video directly:
-[Download Video](assets/image//2025-01-06.webm)
+[Download Video](assets/image/2025-01-06.webm)
 
 
 ---
