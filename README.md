@@ -57,8 +57,6 @@ You can download or view the video directly:
 <a><img src="assets/images/5.jpg" width="160" /></a>
 <a><img src="assets/images/6.jpg" width="160" /></a>
 <a><img src="assets/images/7.jpg" width="160" /></a>
-<a><img src="assets/images/8.jpg" width="160" /></a>
-<a><img src="assets/images/9.jpg" width="160" /></a>
 
 ---
 
