@@ -1,5 +1,3 @@
-# myapp
-
 # MyApp - Dock with Draggable Icons
 
 This Flutter application demonstrates a dock with draggable icons. Users can hover over the icons to scale them up and drag them to reorder within the dock. The dock items are displayed as a horizontal row of icons, and each icon has its own dynamic color and hover effect.
