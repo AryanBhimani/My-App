@@ -46,6 +46,12 @@ samples, guidance on mobile development, and a full API reference.
 ## Video Demo
 You can download or view the video directly:
 [Download Video](assets/2025-01-06.webm)
+<video width="320" height="240" controls>
+  <source src="assets/2025-01-06.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
 ---
 
 ## Connect
