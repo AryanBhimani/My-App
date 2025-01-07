@@ -85,7 +85,7 @@ class Dock<T> extends StatefulWidget {
 /// The state for the [Dock] widget, which manages the items and hover states.
 class _DockState<T> extends State<Dock<T>> {
   // List of [T] items, copied from the widget's input
-  late List<T> _items = widget.items.toList();
+  late final List<T> _items = widget.items.toList();
 
   // Variable to track the index of the currently hovered item
   int? _hoveredIndex;
