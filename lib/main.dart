@@ -94,7 +94,6 @@ class DockScreen extends StatelessWidget {
     );
   }
 
-
   Widget buildIconContainer(Map<String, dynamic> item, bool isHovered, Color color, bool isFirst) {
     return Container(
       width: 60,
@@ -130,7 +129,6 @@ class DockScreen extends StatelessWidget {
   }
 }
 
-
 class Dock extends StatefulWidget {
   const Dock({
     super.key,
@@ -155,9 +153,7 @@ class _DockState extends State<Dock> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Determine the dock layout based on available width
         final isHorizontal = constraints.maxWidth > 600;
-
         return Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
@@ -177,7 +173,6 @@ class _DockState extends State<Dock> {
       },
     );
   }
-
 
   List<Widget> buildDockItems() {
     return _items.asMap().entries.map((entry) {
@@ -205,10 +200,8 @@ class _DockState extends State<Dock> {
             onWillAccept: (data) => true, 
             onAccept: (data) {
               setState(() {
-                final draggedItem =
-                    _items.firstWhere((e) => e['icon']!.hashCode == data);
+                final draggedItem = _items.firstWhere((e) => e['icon']!.hashCode == data);
                 final draggedIndex = _items.indexOf(draggedItem);
-
                 _items.removeAt(draggedIndex);
                 _items.insert(index, draggedItem);
               });
