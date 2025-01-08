@@ -68,18 +68,18 @@ class DockScreen extends StatelessWidget {
               colors: iconColors,
               builder: (item, isHovered, color, isFirst) {
                 return AnimatedScale(
-                  scale: isHovered ? 1.2 : 1.0, // Scale the icon on hover
+                  scale: isHovered ? 1.2 : 1.0, 
                   duration: const Duration(milliseconds: 200),
                   child: Tooltip(
-                    message: item['name']!, // Show the name in a tooltip
+                    message: item['name']!, 
                     child: Draggable<int>(
-                      data: item['icon']!.hashCode, // Unique identifier for drag
+                      data: item['icon']!.hashCode, 
                       feedback: Material(
                         color: const Color.fromARGB(0, 252, 251, 251),
                         child: buildIconContainer(item, isHovered, color, isFirst),
                       ),
                       childWhenDragging: Opacity(
-                        opacity: 0.5, // Semi-transparent while dragging
+                        opacity: 0.5, 
                         child: buildIconContainer(item, isHovered, color, isFirst),
                       ),
                       child: buildIconContainer(item, isHovered, color, isFirst),
@@ -94,7 +94,7 @@ class DockScreen extends StatelessWidget {
     );
   }
 
-  /// Widget to build each icon in the Dock
+
   Widget buildIconContainer(Map<String, dynamic> item, bool isHovered, Color color, bool isFirst) {
     return Container(
       width: 60,
@@ -130,18 +130,18 @@ class DockScreen extends StatelessWidget {
   }
 }
 
-/// Dock widget to display and reorder draggable icons responsively
+
 class Dock extends StatefulWidget {
   const Dock({
     super.key,
     required this.items,
     required this.builder,
-    required this.colors,  // Colors parameter
+    required this.colors,  
   });
 
   final List<Map<String, dynamic>> items;
   final Widget Function(Map<String, dynamic>, bool isHovered, Color color, bool isFirst) builder;
-  final List<Color> colors;  // List of colors to assign to each icon
+  final List<Color> colors;
 
   @override
   State<Dock> createState() => _DockState();
@@ -178,7 +178,7 @@ class _DockState extends State<Dock> {
     );
   }
 
-  /// Build the dock items with dynamic icon colors
+
   List<Widget> buildDockItems() {
     return _items.asMap().entries.map((entry) {
       final index = entry.key;
@@ -186,7 +186,6 @@ class _DockState extends State<Dock> {
 
       return GestureDetector(
         onTap: () {
-          // Optional: Action when an item is tapped
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('${item['name']} clicked!')),
           );
@@ -194,19 +193,18 @@ class _DockState extends State<Dock> {
         child: MouseRegion(
           onEnter: (_) {
             setState(() {
-              _hoveredIndex = index; // Set hover state
+              _hoveredIndex = index; 
             });
           },
           onExit: (_) {
             setState(() {
-              _hoveredIndex = null; // Reset hover state
+              _hoveredIndex = null; 
             });
           },
           child: DragTarget<int>(
-            onWillAccept: (data) => true, // Always accept the drag
+            onWillAccept: (data) => true, 
             onAccept: (data) {
               setState(() {
-                // Reorder items on drag-and-drop
                 final draggedItem =
                     _items.firstWhere((e) => e['icon']!.hashCode == data);
                 final draggedIndex = _items.indexOf(draggedItem);
