@@ -50,7 +50,7 @@ class DockScreen extends StatelessWidget {
             const Text(
               'Movable Dock App',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
               ),
