@@ -7,7 +7,6 @@ The given Flutter code creates a dock app with draggable and interactive icons. 
 ## main.dart
 
 1. Code:
-   ```bash
         import 'package:flutter/material.dart';
 
         void main() {
