@@ -51,10 +51,10 @@ You can download or view the video directly:
 ---
 
 <a><img src="assets/images new/1.png" width="200" /></a>
-<a><img src="assets/images new/2.jpg" width="200" /></a>
-<a><img src="assets/images new/3.jpg" width="200" /></a>
-<a><img src="assets/images new/4.jpg" width="200" /></a>
-<a><img src="assets/images new/5.jpg" width="200" /></a>
+<a><img src="assets/images new/2.png" width="200" /></a>
+<a><img src="assets/images new/3.png" width="200" /></a>
+<a><img src="assets/images new/4.png" width="200" /></a>
+<a><img src="assets/images new/5.png" width="200" /></a>
 
 ---
 
